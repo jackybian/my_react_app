@@ -1,13 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Champions from "../components/Champions";
+export default function App(){
+  const [name, setName] = useState<string>('未定义变量')
+  const [age, setAge] = useState<number>(28)
+  const [isProgrammer, setIsProgrammer] = useState<boolean>(true)
 
-const App: React.FC=()=> {
-  return (
-    <div className="App">
-      <span className='heading'>Taskify</span>
+  return(
+    <div>
+      <Champions />
     </div>
   );
 }
-
-export default App;
