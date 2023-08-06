@@ -35,7 +35,7 @@ const TdInput: FC<IProps> = ({
 
     return (
         <div>
-            <input type="text" placeholder="plz input" ref={inputRef}></input>
+            <input type="text" placeholder="请输入你要写的内容!" ref={inputRef}></input>
             <button onClick={addItem}>ADD</button>
         </div>
     );

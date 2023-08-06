@@ -32,14 +32,14 @@ const TodoList :FC= (): ReactElement=>{
 
     const removeTodo = useCallback((id: number):void=>{
         dispatch({
-            type: ACTION_TYPE.ADD_TODO,
+            type: ACTION_TYPE.REMOVE_TODO,
             payload: id
         })
     },[])
 
     const toggleTodo = useCallback((id: number):void=>{
         dispatch({
-            type: ACTION_TYPE.ADD_TODO,
+            type: ACTION_TYPE.TOGGLE_TODO,
             payload: id
         })
     },[])
